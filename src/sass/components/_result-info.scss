@@ -1,0 +1,16 @@
+.resultInfo {
+
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	transform: translate(-50%,-50%);
+	width: 25rem;
+	max-width: 60%;
+	
+
+	&__text {
+		font-family: "Roboto", sans-serif;
+		font-size: 5rem;
+		font-weight: bold;
+	}
+}

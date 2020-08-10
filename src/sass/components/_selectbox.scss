@@ -1,0 +1,43 @@
+.selectbox {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #444;
+    width: 180px;
+    max-width: 60%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+    background-image: linear-gradient(45deg, transparent 50%, #CB356B 50%), linear-gradient(135deg, #BD3F32 50%, transparent 50%), linear-gradient(to right, #BD3F32, #BD3F32);
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2em) .5em;
+    background-size: 5px 5px, 5px 5px, 0 0;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    margin-right: 1rem;
+
+    @include mediumSize {
+        background-position: calc(100% - 20px) calc(1.5em + 2px), calc(100% - 15px) calc(1.5em + 2px), calc(100% - 2em) .5em;
+    }
+
+    &:focus {
+        background-image: linear-gradient(45deg, #CB356B 50%, transparent 50%), linear-gradient(135deg, transparent 50%, #BD3F32 50%), linear-gradient(to right, #BD3F32, #BD3F32);
+        background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em, calc(100% - 3.5em) 0.5em;
+        background-size: 5px 5px, 5px 5px, 0 0;
+        background-repeat: no-repeat;
+        border-color: black;
+        outline: 0;
+
+        @include mediumSize {
+            background-position: calc(100% - 15px) 1.5em, calc(100% - 20px) 1.5em, calc(100% - 3.5em) 0.5em;
+        }
+    }
+
+    @include mediumSize {
+        font-size: 1.6rem;
+        width: 220px;
+    }
+}

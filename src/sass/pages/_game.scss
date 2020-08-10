@@ -1,0 +1,58 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    @include mediumSize {
+        flex-direction: column;
+        }
+    }
+.section-score {
+    z-index: 2;
+    position: absolute;
+    top: 20px;
+    left: calc(40% - 50px);
+    width: 300px;
+    height: 300px;
+
+
+    &__ul {
+        &__li {
+            list-style-type: none;
+            font-size: 2rem;
+
+            @media screen and (min-width: 500px) and (max-width: 719px) {
+                font-size: 2.5rem;
+            }
+
+            @media screen and (min-width: 720px) {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    @include mediumSize {
+        position: absolute;
+        top: 20%;
+        left: 70%;
+    }
+}
+.section-mode {
+    display: flex;
+    z-index: 3;
+    position: absolute;
+    flex-direction: row;
+    bottom: 20px;
+    left: calc(50% - 100px);
+    
+    width: 300px;
+    max-width: 70%;
+
+    @include mediumSize {
+        flex-direction: column;
+        position: absolute;
+        bottom: 40%;
+        left: calc(75% - 20px);
+    }
+}
+

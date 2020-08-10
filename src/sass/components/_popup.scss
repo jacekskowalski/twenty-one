@@ -1,0 +1,46 @@
+.popup {
+    z-index: 10000;
+    background-color: rgba(128,128,128, 0.9);
+    position: fixed;
+    top: 00%;
+    left: 00%;
+    right: 0%;
+    bottom: 0%;
+
+
+    &__content {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        width: 100%;
+        height: 90%;
+        background-color: rgb(255, 255, 255);
+        font-size: 6rem !important;
+        border-radius: 3px;
+        display: table;
+        overflow: hidden;
+        opacity: 0.5;
+        transition: all .5s .2s;
+
+        &__list {
+            margin-left: 40%;
+            margin-bottom: 0;
+        }
+
+
+        &__li {
+            color: black !important;
+            height: 100px;
+            margin-left: -50px;
+            font-size: 3rem;
+            list-style-type: none;
+            padding: 0;
+
+            @include mediumSize {
+                margin-left: 0px;
+            }
+        }
+    }
+}
