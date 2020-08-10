@@ -24,4 +24,4 @@ It was created mainly with the use of React.js, Typescript, HTML5 and CSS3, SASS
 
 3) insert npm build
 
-3)to run app insert npm run start_all
+4)to run app insert npm run start_all
