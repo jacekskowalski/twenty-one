@@ -135,7 +135,7 @@ export default class Game extends Component<{}, any> {
                 
                                 this.nextPlayer();
                           
-                        } else if (sum == 22 && aces == 2) {
+                        } else if (sum === 22 && aces === 2) {
                             tempObj.id = this.state.currentPlayer;
                             tempObj.value = sum;
                             resultsArray.push(tempObj);
@@ -197,7 +197,7 @@ export default class Game extends Component<{}, any> {
                                           });
                                
                                 this.nextPlayer();
-                            } else if (sum == 22 && aces == 2) {
+                            } else if (sum === 22 && aces === 2) {
                                 tempObj.id = this.state.currentPlayer;
                                 tempObj.value = sum;
                                 resultsArray.push(tempObj);
