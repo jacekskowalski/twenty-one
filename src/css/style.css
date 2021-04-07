@@ -280,12 +280,10 @@ html {
     bottom: 0%;
     width: 100%;
     height: 90%;
-    background-color: white;
     font-size: 6rem !important;
     border-radius: 3px;
     display: table;
     overflow: hidden;
-    opacity: 0.5;
     transition: all .5s .2s; }
     .popup__content__list {
       margin-left: 40%;
@@ -302,6 +300,7 @@ html {
           margin-left: 0px; } }
 
 .resultInfo {
+  z-index: 11000;
   position: absolute;
   top: 50%;
   left: 40%;

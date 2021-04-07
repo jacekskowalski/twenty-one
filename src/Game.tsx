@@ -263,7 +263,7 @@ export default class Game extends Component<{}, any> {
                         <img src={this.state.card2_img} alt="card" className="section-cards__card" />
                         </div>
                     }
-                  
+               
                     <div className="resultInfo">
                         {this.state.isWinner &&
                             <p className="resultInfo__text">You`ve won</p>
